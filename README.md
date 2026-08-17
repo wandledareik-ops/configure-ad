@@ -30,7 +30,7 @@ This tutorial outlines the Setup of a domain controller and domain computer with
 <img width="1458" height="757" alt="picture 1" src="https://github.com/user-attachments/assets/2e04759d-4541-4f76-a3c4-acc45fd077c8" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+First on the Domain Controller VM you open Server Manager from the start menu and click Add roles and features to install the Active Directory Services.
 </p>
 <br />
 <img width="1781" height="766" alt="picture 2" src="https://github.com/user-attachments/assets/e1561c20-61f8-45ec-895a-df1ef0279539" />
@@ -38,7 +38,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Click next thru the menu to select the computer as the domain controller and finish the installation of the Active Directory program.
 </p>
 <br />
 
@@ -46,21 +46,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img width="1432" height="744" alt="picture 3" src="https://github.com/user-attachments/assets/faca911b-8f8c-48bb-ad0c-71b0d74a4cb8" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+This shows DC-1 is the domain controller for the mydomain.com domain name. This computer is will also be the DNS server for itself and any other computer that gets added to the domain.
 </p>
 <br />
 
-<img width="774" height="544" alt="picture 4" src="https://github.com/user-attachments/assets/1ac84541-df8c-4c0f-919c-b18046df52fa" />
+<img width="776" height="546" alt="picture 5" src="https://github.com/user-attachments/assets/eed30dcb-70f4-47b7-8808-f8f9bc003343" />
+
 </p>
 <br />
-Testing the code
+Next, we create a Domain Admin that will be able to make changes within Active Directory. To do this we go to start and select Active Directory Users and Computers.  
 
 <p>
- <img width="776" height="546" alt="picture 5" src="https://github.com/user-attachments/assets/945afb63-c0ca-4ffc-bfa8-67006995f1e6" />
+<img width="774" height="544" alt="picture 4" src="https://github.com/user-attachments/assets/5a676a61-10bf-4bf6-8be5-77a9b6f8f294" />
+
  
 </p>
 <br />
-Test
+Next, we create a Domain Admin that will be able to make changes within Active Directory. To do this we go to start and select Active Directory Users and Computers. 
 
 <p>
 <img width="779" height="542" alt="picture 6" src="https://github.com/user-attachments/assets/b24c4e48-0d7b-480f-88d9-8531ea44f1e5" />
