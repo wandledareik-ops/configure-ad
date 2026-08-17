@@ -3,7 +3,7 @@
 </p>
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+This tutorial outlines the Setup of a domain controller and domain computer with Active Directory.<br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -11,19 +11,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Active Directory Domain Services
-- PowerShell
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022
-- Windows 10 (21H2)
+- Windows Server 2025 Datacenter Azure edition
+- Windows 11 Enterprise N LTSC 2024
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Step 1- Install Active Directory Domain Services within the domain controller
+- Step 2- Create Organizational Units and Admins within Active Directory
+- Step 3- Add another VM to the Domain
+- Step 4- Verify Client 1 is apart of the Domain 
 
 <h2>Deployment and Configuration Steps</h2>
 
