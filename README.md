@@ -2,8 +2,8 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the Setup of a domain controller and domain computer with Active Directory.<br />
+<h1>Using VMs within Azure to Set up a Domain with a Domain Controller and using Active Directory</h1>
+Walkthrough of Setting up a Domain, Domain Controller, and added a second VM to the Domain.  <br />
 
 
 <h2>Environments and Technologies Used</h2>
