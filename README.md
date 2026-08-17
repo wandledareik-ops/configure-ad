@@ -54,7 +54,7 @@ This shows DC-1 is the domain controller for the mydomain.com domain name. This 
 
 </p>
 <br />
-Next, we create a Domain Admin that will be able to make changes within Active Directory. To do this we go to start and select Active Directory Users and Computers.  
+First, we create an Organizational Unit within Active Directory so we can organize our organization. To do this we open Active Directory by selecting start and searching for Active Directory Users and Computers. Then we right click mydomain.com then click new, Organization Unit and name it Admins    
 
 <p>
 <img width="774" height="544" alt="picture 4" src="https://github.com/user-attachments/assets/5a676a61-10bf-4bf6-8be5-77a9b6f8f294" />
@@ -62,43 +62,43 @@ Next, we create a Domain Admin that will be able to make changes within Active D
  
 </p>
 <br />
-Next, we create a Domain Admin that will be able to make changes within Active Directory. To do this we go to start and select Active Directory Users and Computers. 
+Next, we create a Domain Admin that will be able to make changes within Active Directory. Open the new Admins OU and right click the blank space and select new and select users. Fill out the info and finish the process.
 
 <p>
 <img width="779" height="542" alt="picture 6" src="https://github.com/user-attachments/assets/b24c4e48-0d7b-480f-88d9-8531ea44f1e5" />
 </p>
 <br />
-Test
+To make a user into a Domain Admin we right click the user then click properties then up top we select member of then add. Search for Domain Admins then apply and ok.
 <p>
  <img width="760" height="536" alt="picture 7" src="https://github.com/user-attachments/assets/90a10753-0a4f-4d69-bcd7-7a987301d654" />
 
 </p>
 <br />
-Test
+We can move the users into different OUs to keep everything straight. Here we can see the new User within the Admin OU.
 
 <p>
 <img width="1152" height="619" alt="picture 8" src="https://github.com/user-attachments/assets/57717f95-c8f6-4ce2-afa9-df0d5ca538c4" />
  
 </p>
 <br />
-Test
+Now we want to add another computer into the domain. First, we need to make sure that the client computer is configured to use the Domain Controller as it's DNS server. For our project we can set this within Azure. Within Azure is navigate to the VM and go to Settings then DNS servers and select Custom and put in the private IP address of our Domain Controller. 
 <p>
  <img width="471" height="289" alt="picture 9" src="https://github.com/user-attachments/assets/f80909dc-5b07-47e9-8c37-a6b2c74bcce0" />
 
 </p>
 <br />
-Test
+We then take the public IP address of our Client VM and with Remote Desktop Connections we can connect to the VM. To do this we search for the Remote Desktop Connection within the start menu.
 
 <p>
 <img width="1226" height="944" alt="picture 10" src="https://github.com/user-attachments/assets/916c6f63-d254-44c8-89bc-cce6733874f5" />
  
 </p>
 <br />
-Test 
+Log in to Client VM as the original User and open the System settings. Scroll down to About then click Domain or workgroup. A domain option will be available, and you type in the name of the domain you wish to add the VM too. Making sure nothing is mispelled. 
 <p>
 <img width="771" height="540" alt="picture 11" src="https://github.com/user-attachments/assets/41f80027-8134-4cb5-a710-74af279f78b6" />
 
 </p>
 <br />
-Test
+If done correctly we can go back to the Domain Controller and open Active Directory. It will by default be in the Computers OU, but you can move it elsewhere. I created the _CLIENTS OU and put it there. 
 
